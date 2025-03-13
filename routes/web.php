@@ -19,6 +19,11 @@ Route::get('/', function () {
 // routes/web.php
 
 // Route pour afficher la page de maintenance
-Route::get('/maintenance', function () {
+
+
+Route::get('/master', function () {
+    return view('master');
+})->name('master');
+Route::get('/maintenance',function(){
     return view('maintenance');
-})->name('maintenance');
+})->name('home');
